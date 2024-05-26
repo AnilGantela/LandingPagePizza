@@ -193,8 +193,13 @@ footer p {
   .pizza-benefits {
     text-align: left;
     justify-content: space-around;
+    width: 100%;
   }
   .pizza-benefits li {
     width: auto;
+    margin: 0px;
+  }
+  .about-textContainer {
+    width: 100%;
   }
 }
