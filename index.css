@@ -1,0 +1,200 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ff6347;
+  color: #333;
+  overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  background-color: #ffffff;
+  color: white;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+header h1 {
+  color: #ff6347;
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+header p {
+  color: #ff6347;
+  font-size: 1.2em;
+}
+
+header img {
+  height: 200px;
+  width: 300px;
+  align-self: center;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #ff6347;
+  border: 2px solid #ff6347;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.cta-button:hover {
+  background-color: #f4f4f4;
+}
+
+section {
+  text-align: center;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  text-align: left;
+  color: #f4f4f4;
+}
+
+.about-textContainer {
+  width: 70%;
+}
+.about-textContainer h2 {
+  font-size: 30px;
+  margin-left: 35px;
+}
+.pizza-benefits {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pizza-benefits li {
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.pizza-benefits li:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+#about img {
+  width: 40%;
+  margin: 0px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#menu {
+  background-color: #f4f4f4;
+  margin-top: 1em;
+  padding: 2em 0;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 30%;
+  margin: 1em;
+  text-align: center;
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#testimonials {
+  background-color: #fff;
+  margin-top: 1em;
+  padding: 2em 0;
+}
+
+.testimonial {
+  width: 60%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  margin-top: 2em;
+}
+
+footer p {
+  margin: 0.5em 0;
+}
+
+@media (max-width: 376px) {
+  footer {
+    display: none;
+  }
+  #testimonials {
+    display: none;
+  }
+  #menu {
+    display: none;
+  }
+  #about {
+    display: none;
+  }
+  #order {
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+  }
+  #about {
+    flex-direction: column;
+    margin: 0px;
+  }
+  #about img {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .pizza-benefits {
+    text-align: left;
+    justify-content: space-around;
+  }
+  .pizza-benefits li {
+    width: auto;
+  }
+}
