@@ -6,6 +6,10 @@ body {
   background-color: #ff6347;
   color: #333;
   overflow-y: auto;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -17,13 +21,12 @@ header {
   color: white;
   text-align: left;
   display: flex;
-  justify-content: space-around;
 }
 
 header h1 {
   color: #ff6347;
   font-size: 2.5em;
-  margin: 0.5em 0;
+  margin: 3px;
 }
 
 header p {
@@ -32,9 +35,11 @@ header p {
 }
 
 header img {
-  height: 200px;
-  width: 300px;
   align-self: center;
+  height: 100px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 .cta-button {
@@ -45,11 +50,17 @@ header img {
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
-  margin-top: 1em;
+  margin-left: 5%;
 }
 
+.header-btn-container {
+  display: flex;
+  margin: 3px;
+  align-items: center;
+}
 .cta-button:hover {
-  background-color: #f4f4f4;
+  background-color: #ff6347;
+  color: #ddd;
 }
 
 section {
@@ -58,10 +69,13 @@ section {
 
 #about {
   display: flex;
-  justify-content: center;
-  margin-top: 1em;
+  justify-content: start;
   text-align: left;
+  background-image: url("./images/aboutImage.jpg");
   color: #f4f4f4;
+  background-size: cover;
+  height: 550px;
+  padding: 1%;
 }
 
 .about-textContainer {
@@ -75,6 +89,7 @@ section {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 50%;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-evenly;
@@ -84,30 +99,25 @@ section {
   width: 200px;
   padding: 10px;
   margin: 5px;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
+  background-color: transparent;
+
   border-radius: 4px;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  color: #333;
+  color: whitesmoke;
+
   transition: background-color 0.3s ease;
 }
 
 .pizza-benefits li:hover {
   background-color: #e0e0e0;
   cursor: pointer;
-}
-
-#about img {
-  width: 40%;
-  margin: 0px;
-  border-radius: 0px 20px 20px 0px;
+  color: #ff6347;
 }
 
 #menu {
+  margin: 0px;
   background-color: #f4f4f4;
-  margin-top: 1em;
-  padding: 2em 0;
 }
 
 .menu-item {
@@ -139,12 +149,43 @@ section {
   font-style: italic;
 }
 
+#order {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 20px;
+  width: 100%;
+  background-image: url("./images/AdobeStock_629573425_Preview.png");
+  background-size: cover;
+  background-position: 10px;
+}
+
+#order div {
+  background-color: transparent;
+  background-position: 20px;
+  padding: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  margin-left: 20px; /* Add margin to separate the image and the form */
+}
+
+#order input[type="text"],
+#order input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 footer {
   background-color: #333;
   color: white;
   padding: 1em 0;
   text-align: center;
-  margin-top: 2em;
 }
 
 footer p {
@@ -152,42 +193,24 @@ footer p {
 }
 
 @media (max-width: 376px) {
-  footer {
-    display: none;
-  }
-  #testimonials {
-    display: none;
-  }
-  #menu {
-    display: none;
-  }
-  #about {
-    display: none;
-  }
-  #order {
-    display: none;
-  }
   header {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    text-align: center;
+
+    align-items: center;
+    justify-content: center;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header {
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
   }
   #about {
     flex-direction: column;
     margin: 0px;
-  }
-  #about img {
-    width: 100%;
-    border-radius: 0px;
   }
 
   .pizza-benefits {
@@ -200,6 +223,17 @@ footer p {
     margin: 0px;
   }
   .about-textContainer {
+    width: 100%;
+  }
+
+  #order div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #order {
+    text-align: left;
     width: 100%;
   }
 }
