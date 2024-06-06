@@ -49,8 +49,8 @@ header img {
   padding: 0.5em 1em;
   text-decoration: none;
   border-radius: 5px;
-  display: inline-block;
-  margin-left: 5%;
+  margin-left: 3%;
+  width: 20%;
 }
 
 .header-btn-container {
@@ -153,14 +153,16 @@ section {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin: 20px;
+  padding: 20px;
   width: 100%;
   background-image: url("./images/AdobeStock_629573425_Preview.png");
   background-size: cover;
   background-position: 10px;
 }
 
-#order div {
+.order-div {
+  border: 2px solid whitesmoke;
+  border-radius: 25px;
   background-color: transparent;
   background-position: 20px;
   padding: 20px;
@@ -169,7 +171,6 @@ section {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 10px;
-  margin-left: 20px; /* Add margin to separate the image and the form */
 }
 
 #order input[type="text"],
@@ -229,11 +230,20 @@ footer p {
   #order div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
   #order {
     text-align: left;
+    width: 100%;
+  }
+  #order input[type="text"],
+  #order input[type="email"] {
+    margin: 5px;
+    width: 100%;
+  }
+  .cta-button {
     width: 100%;
   }
 }
