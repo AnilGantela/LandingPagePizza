@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Delivery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <link
       rel="icon"
       href="images/AdobeStock_530023910_Preview.png "
@@ -44,21 +46,28 @@
     </section>
 
     <section id="menu">
-      <h2>Our Menu</h2>
-      <div class="menu-item">
-        <img src="pepperoni-pizza.jpg" alt="Pepperoni Pizza" />
-        <h3>Pepperoni Pizza</h3>
-        <p>A classic favorite topped with loads of pepperoni and cheese.</p>
-      </div>
-      <div class="menu-item">
-        <img src="margherita-pizza.jpg" alt="Margherita Pizza" />
-        <h3>Margherita Pizza</h3>
-        <p>Simple and delicious with fresh tomatoes, mozzarella, and basil.</p>
-      </div>
-      <div class="menu-item">
-        <img src="veggie-pizza.jpg" alt="Veggie Pizza" />
-        <h3>Veggie Pizza</h3>
-        <p>Loaded with a variety of fresh vegetables for a healthy choice.</p>
+      <h1 style="text-align: left;">Our Menu </h1>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="1000">
+            <img
+              src="./images/AdobeStock_58141496.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-interval="1000">
+            <img
+              src="images/AdobeStock_581414964_Preview.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+         
       </div>
     </section>
 
@@ -69,14 +78,14 @@
           "Best pizza I've ever had! Quick delivery and the pizza was hot and
           fresh."
         </p>
-        <footer>- John D.</footer>
+        <footer style="background-color:#ff6347 ;">- John D.</footer>
       </div>
       <div class="testimonial">
         <p>
           "Amazing flavors and great service. I highly recommend ordering from
           here."
         </p>
-        <footer>- Sarah P.</footer>
+        <footer style="background-color:#ff6347 ;">- Sarah P.</footer>
       </div>
     </section>
 
@@ -93,9 +102,12 @@
       </div>
     </section>
 
-    <footer>
+    <footer style="background-color:#ffffff; color: brown;">
       <p>&copy; 2024 Delicious Pizza Delivery. All rights reserved.</p>
       <p>Contact us: (123) 456-7890 | info@deliciouspizza.com</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
   </body>
 </html>

@@ -80,6 +80,7 @@ section {
 
 .about-textContainer {
   width: 70%;
+  overflow: hidden;
 }
 .about-textContainer h2 {
   font-size: 30px;
@@ -117,20 +118,15 @@ section {
 
 #menu {
   margin: 0px;
-  background-color: #f4f4f4;
+  padding: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px;
 }
 
-.menu-item {
-  display: inline-block;
-  width: 30%;
-  margin: 1em;
-  text-align: center;
-}
-
-.menu-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.carousel-item {
+  transition-duration: 10s;
+  transition-behavior: ease;
 }
 
 #testimonials {
@@ -145,7 +141,7 @@ section {
   padding: 1em;
   background-color: #f4f4f4;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-style: italic;
 }
 
